@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        html{
+            height: 100%;
+            background-image: url(bgfood2.jpg);
+              background-repeat: no-repeat;
+            background-size: cover;    
+        }
+        body{
+            height: 100%;
+        }
+        .box{
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .box1{
+            text-align: center;
+            margin-top: 200px;
+            display:block ;
+            text-decoration: none;
+            font-size: 30px;
+            padding: 8px 30px;
+            margin: 102px ;
+            color: rgb(128, 129,129);
+            font-size: 300;
+        }
+
+        .add{
+            
+            text-decoration: none;
+            font-size: 20px;
+             padding: 5px 15px;
+            margin: 6px ;
+            color: rgb(128, 129,129);
+            font-size: 300;
+            border: 1px solid rgb(250, 212, 218);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+     
+
+        .img-pos{
+           /*  display: none;
+            background-color: coral; 
+            background-image: url(bfood1.jpg);*/
+            animation: change3 30s infinite ease-in-out;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        @keyframes change3 {
+      0% {
+        content: url(food11.jpg);
+        clip-path: circle(35.9% at 50% 45%);
+            object-position: center;
+            margin-top: 70px;
+           margin-right: 70px;
+
+       /* background-image: url(bfood2.jpg); */
+      }
+
+      25% {
+        content: url(food12.jpg);
+        clip-path: circle(35.9% at 50% 45%);
+            object-position: center;
+            margin-top: 70px;
+           margin-right: 70px;
+
+      /*  background-image: url(bfood3.jpg);*/
+      }
+
+      50% {
+        content: url(food13.jpg);
+        clip-path: circle(35.9% at 50% 45%);
+            object-position: center;
+            margin-top: 70px;
+           margin-right: 70px;
+
+      /*  background-image: url(food5.jpg); */
+      }
+
+      75% {
+        content: url(food14.jpg);
+        clip-path: circle(35.9% at 50% 45%);
+            object-position: center;
+            margin-top: 70px;
+           margin-right: 70px;
+
+       /* background-image: url(food3.jpg); */
+      }
+
+      100% {
+        content: url(food17.jpg);
+        clip-path: circle(35.9% at 50% 45%);
+            object-position: center;
+            margin-top: 70px;
+           margin-right: 70px;
+      /*  background-image: url(food6.jpg); */
+      }
+
+    } 
+
+    .change_content:after {
+  content: "";
+  animation: changetext 20s infinite linear;
+  color: #00b894;
+  font-size: 45px;
+}
+
+@keyframes changetext {
+  0% {
+    content: "Paneer";
+  }
+  20% {
+    content: "Biryani";
+  }
+  35% {
+    content: "Italian";
+  }
+  60% {
+    content: "chinese";
+  }
+  80% {
+    content: "South Indian";
+  }
+  100% {
+    content: "Roti";
+  }
+}
+
+.add-btn{
+  text-decoration: none; 
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">
+            <h1>Food Grab</h1>
+            <p>Are you hungry?<br> Then you sre right place  Don't Wait more </p>
+            <p>Lets Grab the food item that you like <span class="change_content"> </span> </p>
+            <button class="add"><a class="add-btn" href="food.html">Explore Now</a> </button>
+        </div>
+        <div class="box2">
+            <div class="img-pos">
+             <img  src="food1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
